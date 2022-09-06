@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Raleway', "sans-serif";
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* HIGHT RESOLUTION */
+
+@media (min-width: 2140px) {
+
+    body {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+
+/* HEADER*/
+
+header {
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+header nav img {
+    padding: 0px 40px;
+    margin-right: auto;
+}
+
+nav a {
+    padding: 40px 20px;
+    border-top: 3px solid transparent;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    border-top-color: #0065fc;
+}
+
+.subnav {
+    display: flex;
+}
+
+.subnav a:hover {
+    color: #0065fc;
+}
+
+/* PRESENTATION */
+
+.presentation {
+    padding: 0px 20px;
+    font-size: medium;
+}
+
+.presentation h1 {
+    margin-bottom: 10px;
+    }
+
+.presentation p {
+    margin-bottom: 10px;
+}
+
+/* SEARCH */
+
+.search {
+    display: flex;
+    padding: 20px;
+}
+
+.search i {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.search input {
+    border: 1px solid #f2f2f2;
+    flex-basis: 16rem;
+    padding: 15px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.search button {
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    padding: 15px;
+    background-color: #0065fc;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;    
+}
+
+.fa-solid.fa-magnifying-glass {
+    display: none;
+}
+
+
+/* FILTERS */
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    header nav img {
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+
+    .subnav{
+        order: 1;
+        flex-basis: 100%;
+    }
+
+    .subnav a {
+        flex-basis: 50%;
+        text-align: center;
+        padding: 15px 20px;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    .subnav a:hover {
+        border-bottom-color: #0065fc;
+        border-top-color: transparent 
+    }
+
+    .presentation h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .text-search {
+        display: none;
+    }
+
+    .search button {
+        display: inline;
+        border-radius: 20px 20px 20px 20px;
+        margin-left: -15px;
+    }
+
+    .fa-solid.fa-magnifying-glass {
+        display: inline;
+        color: white;
+        background-color: #0065fc;
+        padding: 5px;
+    }
+}
+
