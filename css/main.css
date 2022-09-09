@@ -278,6 +278,7 @@ nav a:hover {
     object-fit: cover;
     width: 170px;
     height: 190px;
+    min-width: 170px;
 }
 
 .popular-card-description {
@@ -298,9 +299,94 @@ nav a:hover {
     margin-top: auto;
 }
 
+/* ACTIVITY */
+
+.results-activity h3 {
+    padding-left: 20px;
+}
+
+.card-activity {
+    display: flex;
+    margin: 20px;
+    height: 500px;
+    gap: 60px;
+}
+
+.card-activity-column .activity {
+    margin-bottom: 45px;
+}
+
+/* ACTIVITY CARD*/
+
+.activity {
+    max-height: 470px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 5px rgb(0 0 0 / 6%);
+    padding-bottom: 20px;
+    border: #f2f2f2 1px solid;
+    cursor: pointer;    
+}
+
+.activity-description {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.activity .img-activity-1 {
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 320px;
+    height: 400px;
+    max-width: 100%;
+}
+
+.activity .img-activity-2 {
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 320px;
+    height: 150px;
+    max-width: 100%;
+}
+
+.activity .img-activity-3 {
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 320px;
+    height: 100px;
+    max-width: 100%;
+}
+
+.activity .img-activity-4 {
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 320px;
+    height: 400px;
+    max-width: 100%;
+}
+
+.activity .img-activity-5 {
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 320px;
+    height: 100px;
+    max-width: 100%;
+}
+
+.activity .img-activity-6 {
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 320px;
+    height: 150px;
+    max-width: 100%;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 992px) {
+
+    /* HEADER RESPONSIVE */
 
     header nav img {
         margin: auto;
@@ -325,10 +411,14 @@ nav a:hover {
         border-top-color: transparent 
     }
 
+    /* PRESENTATION RESPONSIVE */
+
     .presentation h1 {
         font-size: 1.5rem;
         font-weight: bold;
     }
+
+    /* SEARCH RESPONSIVE */
 
     .text-search {
         display: none;
@@ -347,6 +437,8 @@ nav a:hover {
         padding: 5px;
     }
 
+    /* FILTERS RESPONSIVE */
+
     .filters {
         flex-direction: column;
         align-items: flex-start;
@@ -356,6 +448,8 @@ nav a:hover {
         margin-left: 0px;
         margin-bottom: 10px;
     }
+
+    /* LODGING RESPONSIVE */
 
     .results-lodging {
         flex-direction: column;
@@ -380,7 +474,6 @@ nav a:hover {
     .results-lodging-city {
         flex-direction: column;
         margin: 0px;
-
     }
 
     .lodging-city h3 {
@@ -396,10 +489,11 @@ nav a:hover {
         box-shadow: 0 0 5px #f2f2f2;
     }
 
+    /* POPULAR RESPONSIVE */
+
     .popular-card img {
         border-radius: 20px 0px 0px 20px;
         padding: 10px;
-        object-fit: cover;
         width: 180px;
         height: 160px;
     }
@@ -408,6 +502,49 @@ nav a:hover {
         color: #f2f2f2;
         margin-top: auto;
     }
+
+    /* ACTIVITY RESPONSIVE */
+
+    .card-activity {
+        flex-direction: column;
+        width: 90%;
+        gap: 2%;
+        margin-bottom: 10px;
+    }
+
+    .card-activity-column .activity {
+        margin-bottom: 10px;
+    }
+
+    .activity .img-activity-1 {
+        width: 100%;
+        height: 210px;
+    }
+    
+    .activity .img-activity-2 {
+        width: 100%;
+        height: 210px;
+    }
+    
+    .activity .img-activity-3 {
+        width: 100%;
+        height: 210px;
+    }
+    
+    .activity .img-activity-4 {
+        width: 100%;
+        height: 210px;
+    }
+    
+    .activity .img-activity-5 {
+        width: 100%;
+        height: 210px;
+    }
+    
+    .activity .img-activity-6 {
+        width: 100%;
+        height: 210px;
+    }
 }
 
 /* HIGHT RESOLUTION */
@@ -415,7 +552,7 @@ nav a:hover {
 @media (min-width: 2140px) {
 
     body {
-        margin-left: 300px;
-        margin-right: 300px;
+        margin-left: 1000px;
+        margin-right: 1000px;
     }
 }
