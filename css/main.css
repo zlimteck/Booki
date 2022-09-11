@@ -6,7 +6,12 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 /* HEADER*/
@@ -171,7 +176,7 @@ nav a:hover {
 
 .results-lodging .lodging-city {
     flex-basis: 70%;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
 }
 
 .results-lodging .popular-city {
@@ -301,8 +306,12 @@ nav a:hover {
 
 /* ACTIVITY */
 
+.results-activity {
+    margin-top: 40px;
+}
+
 .results-activity h3 {
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .card-activity {
@@ -319,10 +328,9 @@ nav a:hover {
 /* ACTIVITY CARD*/
 
 .activity {
-    max-height: 470px;
+    max-height: 430px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 3px 3px 5px rgb(0 0 0 / 6%);
-    padding-bottom: 20px;
     border: #f2f2f2 1px solid;
     cursor: pointer;    
 }
@@ -338,7 +346,7 @@ nav a:hover {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     width: 320px;
-    height: 400px;
+    height: 363px;
     max-width: 100%;
 }
 
@@ -362,7 +370,7 @@ nav a:hover {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     width: 320px;
-    height: 400px;
+    height: 363px;
     max-width: 100%;
 }
 
@@ -380,6 +388,41 @@ nav a:hover {
     width: 320px;
     height: 150px;
     max-width: 100%;
+}
+
+/* RESPONSIVE */
+
+footer {
+    width:100%;
+    background-color: #f2f2f2;
+}
+
+.footer-content {
+    display: flex;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+}
+
+.footer-column {
+    width: 30%;
+    padding: 30px 20px 30px 20px
+}
+
+.footer-column h3 {
+    padding-left: 10px;
+}
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-size: medium;    
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
 }
 
 /* RESPONSIVE */
@@ -505,10 +548,18 @@ nav a:hover {
 
     /* ACTIVITY RESPONSIVE */
 
+    .results-activity {
+        max-height: max-content;
+    }
+
     .card-activity {
         flex-direction: column;
-        width: 90%;
         gap: 2%;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .activity {
         margin-bottom: 10px;
     }
 
@@ -545,14 +596,13 @@ nav a:hover {
         width: 100%;
         height: 210px;
     }
-}
 
-/* HIGHT RESOLUTION */
+    .footer-content {
+        flex-direction: column;
+    }
 
-@media (min-width: 2140px) {
-
-    body {
-        margin-left: 1000px;
-        margin-right: 1000px;
+    .footer-column {
+        width: 100%;
+        padding: 10px 20px
     }
 }
