@@ -60,7 +60,7 @@ nav a:hover {
 
 .presentation h1 {
     margin-bottom: 10px;
-    }
+}
 
 .presentation p {
     margin-bottom: 10px;
@@ -111,6 +111,16 @@ nav a:hover {
     margin-bottom: 0px;
     display: flex;
     align-items: center;
+}
+
+.filter1 {
+    display: flex;
+
+}
+
+.filter2 {
+    display: flex;
+
 }
 
 .filter {
@@ -176,7 +186,6 @@ nav a:hover {
 
 .results-lodging .lodging-city {
     flex-basis: 70%;
-    /*margin-right: 20px;*/
 }
 
 .results-lodging .popular-city {
@@ -487,9 +496,15 @@ footer {
         align-items: flex-start;
     }
 
-    .filter {
-        margin-left: 0px;
+    .filter { 
+        margin-left: 10px;
         margin-bottom: 10px;
+    }
+
+    .filter2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     /* LODGING RESPONSIVE */
