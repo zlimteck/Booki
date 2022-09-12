@@ -14,10 +14,6 @@ main {
     max-width: 1440px;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 /* HEADER*/
 
 header {
